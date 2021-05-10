@@ -1,4 +1,4 @@
-#Tipos de acessibilidade incluídas em nosso projeto:
+## Tipos de acessibilidade incluídas em nosso projeto:
 
 1 - Aumentar a fonte
 
