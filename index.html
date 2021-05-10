@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" 
+    crossorigin="anonymous" />
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Projeto Gulliver Traveller - Acessibilidade</title>
+</head>
+<body>
+
+    <!-- cabeçalho de Acessibilidade  -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Acessibilidade</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"><i class="fas fa-sign-language" alt="ativar leitura em libras"></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"><i class="fas fa-assistive-listening-systems" alt="ativar leitor de tela"></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"><i class="fas fa-search-plus" alt="aumentar fonte"></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"><i class="fas fa-search-minus" alt="diminuir fonte"></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"><i class="fas fa-low-vision" alt="aumentar contraste"></i></a>
+                  </li>
+                </ul> 
+            </div>
+        </div>
+    </nav>
+
+    <!-- cabeçalho principal -->
+
+    <header class="header__principal">
+        <section class="header__titulo">
+            <h3>Projeto Gulliver</h3>
+        </section>
+        <div>
+            <input class="form-control" type="search" placeholder="Para onde quer ir?">
+        </div>
+        <nav class="menu__principal">
+            <ul class="menu nav nav-pills nav-fill">
+                <li class="menu__item nav-item"><a href=""><i class="fas fa-pen"></i>Avaliação</a></li>
+                <li class="menu__item nav-item"><a href=""><i class="fas fa-bell"></i>Alertas</a></li>
+                <li class="menu__item nav-item"><a href=""><i class="fas fa-heart"></i>Favoritos</a></li>
+                <li class="menu__item nav-item"><a href=""><i class="fas fa-user"></i>Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- conteúdo principal -->
+    <main>
+        <!-- início links do conteúdo principal -->
+        <article>
+           
+            <nav class="nav nav-pills nav-fill">
+                <button type="button" class="btn btn-outline-dark">Hotéis<i class="fas fa-bed"></i></button>
+                <button type="button" class="btn btn-outline-dark">Aluguéis de temporada<i class="fas fa-house-user"></i></button>
+                <button type="button" class="btn btn-outline-dark">Restaurantes<i class="fas fa-utensils"></i></button>
+                <button type="button" class="btn btn-outline-dark">Fóruns de viagem<i class="fas fa-comment-alt"></i></button>
+                <button type="button" class="btn btn-outline-dark">Voos<i class="fas fa-plane"></i></button>
+                <button type="button" class="btn btn-outline-dark">Mais<i class="fas fa-ellipsis-h"></i></button>
+            </nav>
+
+            <section class="header__titulo">
+                <h2><red>Restaurantes </red>em Orlando</h2>
+            </section>
+        </article>
+        <!-- início links do conteúdo principal -->
+
+        <div class="container-fluid">
+            <div class="row">
+
+                <!-- início navegação lateral -->
+
+                <div class="col-3 card">
+
+                    <!-- tipo de restaurante -->
+
+                    <p>Tipo</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Restaurantes
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                        <label class="form-check-label" for="flexCheckChecked">
+                            Lanches rápidos
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                        <label class="form-check-label" for="flexCheckChecked">
+                            Docerias
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                        <label class="form-check-label" for="flexCheckChecked">
+                            Café e chá
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                        <label class="form-check-label" for="flexCheckChecked">
+                            Padarias
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                        <label class="form-check-label" for="flexCheckChecked">
+                            Bares e pubs
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                        <label class="form-check-label" for="flexCheckChecked">
+                            Mercado
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                        <label class="form-check-label" for="flexCheckChecked">
+                            Somente entrega
+                        </label>
+                    </div>
+                    <hr>
+
+                    <!-- início características do restaurante -->
+
+                    <p>Características</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Acesso para cadeirantes
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                        <label class="form-check-label" for="flexCheckChecked">
+                            Estacionamento disponível
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                        <label class="form-check-label" for="flexCheckChecked">
+                            Serve bebida alcoólica
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                        <label class="form-check-label" for="flexCheckChecked">
+                            Serviço de mesa
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                        <label class="form-check-label" for="flexCheckChecked">
+                            Wi-fi gratuito
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                        <label class="form-check-label" for="flexCheckChecked">
+                            Música ao vivo
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                        <label class="form-check-label" for="flexCheckChecked">
+                            Mesas ao ar livre
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                        <label class="form-check-label" for="flexCheckChecked">
+                            Bufê
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                        <label class="form-check-label" for="flexCheckChecked">
+                            Televisão
+                        </label>
+                    </div>
+                    <hr>
+
+                    <!-- início refeições -->
+
+                    <p>Refeições</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Café da manhã
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                        <label class="form-check-label" for="flexCheckChecked">
+                            Brunch
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                        <label class="form-check-label" for="flexCheckChecked">
+                            Almoço
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                        <label class="form-check-label" for="flexCheckChecked">
+                            Jantar
+                        </label>
+                    </div>
+                    <a href="">Mostrar mais<i class="fas fa-sort-down"></i></a>
+                    <hr>
+                    
+                    <!-- início reservas -->
+
+                    <p>Reservas</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Reservas on-line
+                        </label>
+                    </div>
+                    <hr>
+
+                    <!-- início preço -->
+                    
+                    <p>Preço</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Baratos
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Moderados
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Sofisticados
+                        </label>
+                    </div>
+                    <hr>
+
+                    <!-- início cozinha -->
+                    
+                    <p>Cozinha</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Americana
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Pizza
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Asiática
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Italiana
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Portuguesa
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Sopa
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Sushi
+                        </label>
+                    </div>
+                    <a href="">Mostrar mais<i class="fas fa-sort-down"></i></a>
+                    <hr>
+
+                    <!-- início restrições alimentares -->
+                    
+                    <p>Restrições alimentares</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Opções vegetarianas
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Opções veganas
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Halal
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Kosher
+                        </label>
+                    </div>
+                    <a href="">Mostrar mais<i class="fas fa-sort-down"></i></a>
+                    <hr>
+
+                    <!-- início bom para -->
+                    
+                    <p>Bom para</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Famílias com crianças
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Crianças
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Grupos grandes
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Ocasiões especiais
+                        </label>
+                    </div>
+                    <a href="">Mostrar mais<i class="fas fa-sort-down"></i></a>
+                    <hr>
+
+                    <!-- início bairros -->
+                    
+                    <p>Bairros</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Flórida Center
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Doctor Philips
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Lake Buena Vista
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Metro West
+                        </label>
+                    </div>
+                    <a href="">Mostrar mais<i class="fas fa-sort-down"></i></a>
+                    <hr>
+
+                    <!-- início aeroportos -->
+                    
+                    <p>Aeroportos</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Orlando Inti Airport
+                        </label>
+                    </div>
+                    <hr>
+
+                    <!-- início parques temáticos -->
+                    
+                    <p>Parques temáticos</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Walt Disney World
+                        </label>
+                    </div>
+                    <hr>
+
+                </div>
+                     
+                <!-- início topo restaurante -->
+
+                <div class="col-9">
+                    <div class="card">
+                        <div class="header__principal">
+                            <section class="header__titulo">
+                                <h1>The Melting Pot</h1>
+                            </section>
+                            <nav class="menu__principal">
+                                <ul class="menu nav nav-pills nav-fill">
+                                    <li class="menu__item nav-item"><a href=""><i class="far fa-heart"></i>Salvar</a></li>
+                                    <li class="menu__item nav-item"><a href=""><i class="far fa-share-square"></i>Compartilhar</a></li>
+                                </ul>
+                            </nav>
+                        </div>    
+                        
+                        <!-- início resumo informações do restaurante -->
+                                
+                        <div class="row align-items-center">
+                            <div class="col-2">
+                                <a href=""><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>2673 avaliações</a>
+                            </div>
+                            <div class="col-4">
+                                <a href="">Nº1 de 2433 restaurantes de Orlando</a>
+                            </div>
+                            <div class="col-6">
+                                <a href="">$$-$$$, Americana, Opções vegetarianas, Opções veganas</a>
+                            </div>
+                        </div>
+                        
+                        <div class="row align-items-center">
+                            <div class="col-4">
+                                <a href=""><i class="fas fa-map-marker-alt"></i>7549 W Sand Lake Rd, Oralndo, FL 32819</a>
+                            </div>
+                            <div class="col-2">
+                                <a href=""><i class="fas fa-phone-alt"></i>+1 407-903-1100</a>
+                            </div>
+                            <div class="col-2">
+                                <a href=""><i class="fas fa-laptop"></i>Site</a>
+                            </div>
+                            <div class="col-2">
+                                <a href=""><i class="fas fa-utensils"></i>Menu</a>
+                            </div>
+                            <div class="col-2">
+                                <a href=""><i class="far fa-clock"></i></i>Aberto agora</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- início carousel -->
+                      
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="/images/foto1.jpg" class="d-block w-100" alt="sopa de mandioca na panela">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="/images/foto2.jpg" class="d-block w-100" alt="fondue de chocolate preto e branco">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="/images/foto3.jpg" class="d-block w-100" alt="morango, bolo e banana cortados em pedaços">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                    <!-- início cards com detalhes do restaurante -->
+
+                    <div class="row justify-content-evenly">
+                        <div class="col card">
+                            <h5>Pontuações e avaliações</h5>
+                            <h5>5,0<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></h5>
+                            <h6><a href="">2674 avaliações</a></h6>
+                            <p><strong>Nº1</strong> de 2433 Restaurantes em Orlando</p>
+
+                            <hr>
+                            <p>PONTUAÇÕES</p>
+                            <p>Comida<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></p>
+                            <p>Serviço<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                            <p>Preço<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+                            <p>Ambiente<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></p>
+                        </div>
+
+                        <div class="col card">
+                            <h5>Detalhes</h5>
+                            <h6>Faixa de preço</h6>
+                            <p>R$ 100 - R$ 263</p>
+                            <h6>Cozinhas</h6>
+                            <p>Americana</p>
+                            <h6>Dietas especiais</h6>
+                            <p>Opçoes vegetarianas, Opções veganas, Opções sem glúten</p>
+
+                            <a href=""><strong>Veja todos os detalhes</strong></a>
+                        </div>
+
+                        <div class="col card">
+                            <h5>Localização e contato</h5>
+                            <span>
+                                <img alt="" class="img-fluid" src="https://maps.google.com/maps/api/staticmap?&amp;channel=ta.desktop.restaurant_review&amp;zoom=15&amp;size=347x137&amp;scale=1&amp;client=gme-tripadvisorinc&amp;format=jpg&amp;sensor=false&amp;language=pt_BR&amp;center=28.450729,-81.485596&amp;maptype=roadmap&amp;&amp;markers=icon:http%3A%2F%2Fc1.tacdn.com%2F%2Fimg2%2Fmaps%2Ficons%2Fcomponent_map_pins_v1%2FR_Pin_Small.png|28.450729,-81.485596&amp;signature=WY3Vuu_fyqqu7a972L7pvO6xSE4=">
+                            </span>
+                            <a href=""><i class="fas fa-map-marker-alt"></i>7549 W Sand Lake Rd, Orlando, FL 32819</a>
+                            <p><i class="far fa-building"></i>Doctor Philips - 4,9 Km de SeaWorld Orlando</p>
+                            <a href=""><i class="fas fa-phone-alt"></i>+1 407-903-1100</a>
+                            <a href=""><i class="fas fa-laptop"></i>Site</a>
+                            <a href=""><i class="far fa-envelope"></i>E-mail</a>
+                    </div>
+
+                    <!-- início menu -->
+
+                    <div class="row align-items-center">
+                        <div class="col card">
+                            <h5>Menu</h5>
+                            <hr>
+                            <h6>Cheese Fondue</h6>
+                            <p>Served with artisan breads and seasonal fruits & veggies. Choose one cheese fondue per cooktop. Gluten-free dipper plate available upon request. Ask your server about vegan cheese fondue options. Charcuterie Board: Our selection of premium cured meats, artisan crackers and accompaniments. Gluten-Free: Without Artisan Crackers. Not included in 3-Course</p>
+                            <h6>Wisconsin Cheddar</h6>
+                            <p>Aged Cheddar, Emmenthaler, Sam Adams Boston Lager®, Garlic. Gluten-Free: with Redbridge® beer</p>
+                            <h6>Fiesta</h6>
+                            <p>Aged Cheddar, Emmenthaler, Lager Beer, Housemade Salsa, Jalapeño. Gluten-Free: with Redbridge® beer</p>
+                            <h6>Bacon & Brie</h6>
+                            <p>Baby Brie, Gruyère, Raclette, Fontina, White Wine, Bacon, Lemon, Scallions</p>
+                            <h6>Quattro Formaggio</h6>
+                            <p>Butterkäse, Fontina, Fresh Mozzarella, Parmesan, White Wine, Roasted Garlic, Basil & Sun-Dried Tomato Pestos</p>
+                            <a href=""><i class="fas fa-utensils"></i>Mostrar menu completo</a>
+                        </div>
+                    </div>
+
+                    <!-- início avaliações -->
+
+                    <div class="row align-items-center">
+                        <div class="col card">
+                            <h5>Avaliações (2674)</h5>
+                            <hr>
+                            <div class="row justify-content-evenly">
+                                <div class="col-6">
+
+                                    <h6>Pontuação dos viajantes</h6>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Excelente
+                                        </label>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="100" aria-valuemax="100"></div>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                          Muito bom
+                                        </label>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="100" aria-valuemax="100"></div>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                          Razoável
+                                        </label>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 10%" aria-valuenow="100" aria-valuemax="100"></div>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                          Ruim
+                                        </label>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 5%" aria-valuenow="100" aria-valuemax="100"></div>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                          Horrível
+                                        </label>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 1%" aria-valuenow="100" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-3">
+                                  <h6>Tipo de viajante</h6>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                          Familias
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                          Romântico
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                          A sós
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                          Negócios
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                          Amigos
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-3">
+                                    <h6>Época do ano</h6>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                          Mar-Mai
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                          Jun-Ago
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                          Set-Nov
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                          Dez-Fev
+                                        </label>
+                                    </div>
+                                </div>
+                              </div>
+                              <button type="button" class="btn btn-dark">Faça uma avaliação</button>
+
+                              <!-- início opinião dos viajantes -->
+
+                              <h5>Veja a opinião dos viajantes:</h5>
+                              <div>
+                                <input type="search" class="form-control" placeholder="Buscar avaliações">
+                              </div>
+
+                              <!-- viajante 1 -->
+
+                              <hr>
+                              <div class="row align-items-center">
+                                <div class="col-2">
+                                  <img class="rounded-circle" src="/images/avatar3.png" alt="rosto de uma mulher loira">
+                                  <p>Greta Blue</p>
+                                </div>
+                                <div class="col-10">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                    <p>Publicado em 20 de março de 2021</p>
+                                    <h5>Lugar impecável e comida sensacional!</h5>
+                                    <p>
+                                        Lugar impecável na qualidade. Fomos de casal e nossa experiência foi excelente pois o atendimento, comida (pedimos foundee) e sobremesa nos agradou demais. Foi realmente uma experiência e super indicamos a todos que gostam de foundee. Melting Pot parabéns pelo atendimento, nunca vi um atendimento...
+                                        <a href=""><strong>Mais</strong></a>
+                                    </p>
+                                    <p>Data da visita: março de 2021</p>
+                                    <p>Útil? <a href=""><i class="far fa-thumbs-up"></i></a></p>
+                                </div>
+                              </div>
+                              <hr>
+
+                              <!-- viajante 2 -->
+
+                              <div class="row align-items-center">
+                                <div class="col-2">
+                                  <img class="rounded-circle" src="/images/avatar2.png" alt="rosto de um homem branco">
+                                  <p>Bob Brown</p>
+                                </div>
+                                <div class="col-10">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                    <p>Publicado em 12 de fevereiro de 2021</p>
+                                    <h5>Muito bom!</h5>
+                                    <p>
+                                        Restaurante muito bom!! uma seleção bem ampla de founde, sugiro experimentar as três modalidade, queijo, carne e chocolate!!
+                                        <a href=""><strong>Mais</strong></a>
+                                    </p>
+                                    <p>Data da visita: janeiro de 2021</p>
+                                    <p>Útil? <a href=""><i class="far fa-thumbs-up"></i></a></p>
+                                </div>
+                              </div>
+                              <hr>
+
+                              <!-- viajante 3 -->
+                            
+                              <div class="row align-items-center">
+                                <div class="col-2">
+                                  <img class="rounded-circle" src="/images/avatar1.png" alt="foto de um lego com chapéu">
+                                  <p>Alex Grey</p>
+                                </div>
+                                <div class="col-10">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                    <p>Publicado em 5 de janeiro de 2021</p>
+                                    <h5>Restaurante excelente!</h5>
+                                    <p>
+                                        O restaurante é muito bonito, o atendimento é maravilhoso, os garçons lhe explicam pacientemente como funciona o cardápio se for sua primeira vez ali. O garçom faz os fondues na sua mesa (menos os doces), o que é um detalhe muito legal. O preço é...
+                                        <a href=""><strong>Mais</strong></a>
+                                    </p>
+                                    <p>Data da visita: janeiro de 2021</p>
+                                    <p>Útil? <a href=""><i class="far fa-thumbs-up"></i></a></p>
+                                </div>
+                              </div>
+
+                              <!-- início paginação -->
+
+                            <hr>
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination">
+                                    <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <footer class="card">
+                        <h6>Projeto Gulliver - Todos os direitos reservados</h6>
+                    </footer>
+                </div>
+            </div>
+        </div>
+        <!-- Rodapé -->
+    
+</body>
+</html>
