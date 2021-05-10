@@ -15,70 +15,72 @@
     integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/style.css">
+    <script src="/js/jquery-3.6.0.js"></script>
+    <script src="./js/font.js"></script>
 
     <title>Projeto Gulliver Traveller - Acessibilidade</title>
 </head>
 <body>
 
     <!-- cabeçalho de Acessibilidade  -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark acessibilidade-bar">
         <div class="container-fluid">
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Acessibilidade</a>
+                    <a class="nav-link active" aria-current="page" >Acessibilidade</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"><i class="fas fa-sign-language" alt="ativar leitura em libras"></i></a>
+                    <a class="nav-link active" aria-current="page"><i class="fas fa-sign-language" alt="ativar leitura em libras"></i></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"><i class="fas fa-assistive-listening-systems" alt="ativar leitor de tela"></i></a>
+                    <a class="nav-link active" aria-current="page"><i class="fas fa-assistive-listening-systems" alt="ativar leitor de tela"></i></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"><i class="fas fa-search-plus" alt="aumentar fonte"></i></a>
+                    <a class="nav-link active" aria-current="page"><i class="fas fa-search-plus" onclick="fontSize('a')" alt="aumentar fonte"></i></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"><i class="fas fa-search-minus" alt="diminuir fonte"></i></a>
+                    <a class="nav-link active" aria-current="page"><i class="fas fa-search-minus" onclick="fontSize('d')" alt="diminuir fonte"></i></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"><i class="fas fa-low-vision" alt="aumentar contraste"></i></a>
+                    <a class="nav-link active" aria-current="page"><i class="fas fa-low-vision" alt="aumentar contraste"></i></a>
                   </li>
                 </ul> 
             </div>
         </div>
     </nav>
-
-    <!-- cabeçalho principal -->
-
-    <header class="header__principal">
-        <section class="header__titulo">
-            <h3>Projeto Gulliver</h3>
-        </section>
-        <div>
-            <input class="form-control" type="search" placeholder="Para onde quer ir?">
-        </div>
-        <nav class="menu__principal">
-            <ul class="menu nav nav-pills nav-fill">
-                <li class="menu__item nav-item"><a href=""><i class="fas fa-pen"></i>Avaliação</a></li>
-                <li class="menu__item nav-item"><a href=""><i class="fas fa-bell"></i>Alertas</a></li>
-                <li class="menu__item nav-item"><a href=""><i class="fas fa-heart"></i>Favoritos</a></li>
-                <li class="menu__item nav-item"><a href=""><i class="fas fa-user"></i>Login</a></li>
-            </ul>
-        </nav>
-    </header>
-
+    
     <!-- conteúdo principal -->
-    <main>
+    <main class="main">
+        
+        <!-- cabeçalho principal -->
+        <header class="header__principal">
+            <section class="header__titulo">
+                <h3>Projeto Gulliver</h3>
+            </section>
+            <div>
+                <input class="form-control" type="search" placeholder="Para onde quer ir?">
+            </div>
+            <nav class="menu__principal">
+                <ul class="menu nav nav-pills nav-fill">
+                    <li class="menu__item nav-item"><a href=""><i class="fas fa-pen"></i>Avaliação</a></li>
+                    <li class="menu__item nav-item"><a href=""><i class="fas fa-bell"></i>Alertas</a></li>
+                    <li class="menu__item nav-item"><a href=""><i class="fas fa-heart"></i>Favoritos</a></li>
+                    <li class="menu__item nav-item"><a href=""><i class="fas fa-user"></i>Login</a></li>
+                </ul>
+            </nav>
+        </header>
+
         <!-- início links do conteúdo principal -->
         <article>
            
             <nav class="nav nav-pills nav-fill">
-                <button type="button" class="btn btn-outline-dark">Hotéis<i class="fas fa-bed"></i></button>
-                <button type="button" class="btn btn-outline-dark">Aluguéis de temporada<i class="fas fa-house-user"></i></button>
-                <button type="button" class="btn btn-outline-dark">Restaurantes<i class="fas fa-utensils"></i></button>
-                <button type="button" class="btn btn-outline-dark">Fóruns de viagem<i class="fas fa-comment-alt"></i></button>
-                <button type="button" class="btn btn-outline-dark">Voos<i class="fas fa-plane"></i></button>
-                <button type="button" class="btn btn-outline-dark">Mais<i class="fas fa-ellipsis-h"></i></button>
+                <button type="button" class="btn btn-outline-dark acessibilidade">Hotéis<i class="fas fa-bed"></i></button>
+                <button type="button" class="btn btn-outline-dark acessibilidade">Aluguéis de temporada<i class="fas fa-house-user"></i></button>
+                <button type="button" class="btn btn-outline-dark acessibilidade">Restaurantes<i class="fas fa-utensils"></i></button>
+                <button type="button" class="btn btn-outline-dark acessibilidade">Fóruns de viagem<i class="fas fa-comment-alt"></i></button>
+                <button type="button" class="btn btn-outline-dark acessibilidade">Voos<i class="fas fa-plane"></i></button>
+                <button type="button" class="btn btn-outline-dark acessibilidade">Mais<i class="fas fa-ellipsis-h"></i></button>
             </nav>
 
             <section class="header__titulo">
@@ -99,49 +101,49 @@
                     <p>Tipo</p>
                     <div class="form-check">
                         <input class="form-check-input checkbox" type="checkbox" value="" id="flexCheckDefault" checked>
-                        <label class="form-check-label" for="flexCheckDefault">
+                        <label class="form-check-label acessibilidade " for="flexCheckDefault">
                           Restaurantes
                         </label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input checkbox" type="checkbox" value="" id="flexCheckChecked">
-                        <label class="form-check-label" for="flexCheckChecked">
+                        <label class="form-check-label acessibilidade " for="flexCheckChecked">
                             Lanches rápidos
                         </label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input checkbox" type="checkbox" value="" id="flexCheckChecked">
-                        <label class="form-check-label" for="flexCheckChecked">
+                        <label class="form-check-label acessibilidade " for="flexCheckChecked">
                             Docerias
                         </label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input checkbox" type="checkbox" value="" id="flexCheckChecked">
-                        <label class="form-check-label" for="flexCheckChecked">
+                        <label class="form-check-label acessibilidade " for="flexCheckChecked">
                             Café e chá
                         </label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input checkbox" type="checkbox" value="" id="flexCheckChecked">
-                        <label class="form-check-label" for="flexCheckChecked">
+                        <label class="form-check-label acessibilidade " for="flexCheckChecked">
                             Padarias
                         </label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input checkbox" type="checkbox" value="" id="flexCheckChecked">
-                        <label class="form-check-label" for="flexCheckChecked">
+                        <label class="form-check-label acessibilidade " for="flexCheckChecked">
                             Bares e pubs
                         </label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input checkbox" type="checkbox" value="" id="flexCheckChecked">
-                        <label class="form-check-label" for="flexCheckChecked">
+                        <label class="form-check-label acessibilidade " for="flexCheckChecked">
                             Mercado
                         </label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input checkbox" type="checkbox" value="" id="flexCheckChecked">
-                        <label class="form-check-label" for="flexCheckChecked">
+                        <label class="form-check-label acessibilidade " for="flexCheckChecked">
                             Somente entrega
                         </label>
                     </div>
@@ -152,55 +154,55 @@
                     <p>Características</p>
                     <div class="form-check">
                         <input class="form-check-input checkbox checkbox" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
+                        <label class="form-check-label acessibilidade" for="flexCheckDefault">
                           Acesso para cadeirantes
                         </label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input checkbox" type="checkbox" value="" id="flexCheckChecked">
-                        <label class="form-check-label" for="flexCheckChecked">
+                        <label class="form-check-label acessibilidade" for="flexCheckChecked">
                             Estacionamento disponível
                         </label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input checkbox" type="checkbox" value="" id="flexCheckChecked">
-                        <label class="form-check-label" for="flexCheckChecked">
+                        <label class="form-check-label acessibilidade" for="flexCheckChecked">
                             Serve bebida alcoólica
                         </label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input checkbox" type="checkbox" value="" id="flexCheckChecked">
-                        <label class="form-check-label" for="flexCheckChecked">
+                        <label class="form-check-label acessibilidade" for="flexCheckChecked">
                             Serviço de mesa
                         </label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input checkbox" type="checkbox" value="" id="flexCheckChecked">
-                        <label class="form-check-label" for="flexCheckChecked">
+                        <label class="form-check-label acessibilidade" for="flexCheckChecked">
                             Wi-fi gratuito
                         </label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input checkbox" type="checkbox" value="" id="flexCheckChecked">
-                        <label class="form-check-label" for="flexCheckChecked">
+                        <label class="form-check-label acessibilidade" for="flexCheckChecked">
                             Música ao vivo
                         </label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input checkbox" type="checkbox" value="" id="flexCheckChecked">
-                        <label class="form-check-label" for="flexCheckChecked">
+                        <label class="form-check-label acessibilidade" for="flexCheckChecked">
                             Mesas ao ar livre
                         </label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input checkbox" type="checkbox" value="" id="flexCheckChecked">
-                        <label class="form-check-label" for="flexCheckChecked">
+                        <label class="form-check-label acessibilidade" for="flexCheckChecked">
                             Bufê
                         </label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input checkbox" type="checkbox" value="" id="flexCheckChecked">
-                        <label class="form-check-label" for="flexCheckChecked">
+                        <label class="form-check-label acessibilidade" for="flexCheckChecked">
                             Televisão
                         </label>
                     </div>
@@ -211,25 +213,25 @@
                     <p>Refeições</p>
                     <div class="form-check">
                         <input class="form-check-input checkbox" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
+                        <label class="form-check-label acessibilidade" for="flexCheckDefault">
                           Café da manhã
                         </label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input checkbox" type="checkbox" value="" id="flexCheckChecked">
-                        <label class="form-check-label" for="flexCheckChecked">
+                        <label class="form-check-label acessibilidade" for="flexCheckChecked">
                             Brunch
                         </label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input checkbox" type="checkbox" value="" id="flexCheckChecked">
-                        <label class="form-check-label" for="flexCheckChecked">
+                        <label class="form-check-label acessibilidade" for="flexCheckChecked">
                             Almoço
                         </label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input checkbox" type="checkbox" value="" id="flexCheckChecked">
-                        <label class="form-check-label" for="flexCheckChecked">
+                        <label class="form-check-label acessibilidade" for="flexCheckChecked">
                             Jantar
                         </label>
                     </div>
@@ -241,7 +243,7 @@
                     <p>Reservas</p>
                     <div class="form-check">
                         <input class="form-check-input checkbox" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
+                        <label class="form-check-label acessibilidade" for="flexCheckDefault">
                           Reservas on-line
                         </label>
                     </div>
@@ -252,19 +254,19 @@
                     <p>Preço</p>
                     <div class="form-check">
                         <input class="form-check-input checkbox" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
+                        <label class="form-check-label acessibilidade" for="flexCheckDefault">
                           Baratos
                         </label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input checkbox" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
+                        <label class="form-check-label acessibilidade" for="flexCheckDefault">
                           Moderados
                         </label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input checkbox" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
+                        <label class="form-check-label acessibilidade" for="flexCheckDefault">
                           Sofisticados
                         </label>
                     </div>
@@ -275,43 +277,43 @@
                     <p>Cozinha</p>
                     <div class="form-check">
                         <input class="form-check-input checkbox" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
+                        <label class="form-check-label acessibilidade" for="flexCheckDefault">
                           Americana
                         </label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input checkbox" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
+                        <label class="form-check-label acessibilidade" for="flexCheckDefault">
                           Pizza
                         </label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input checkbox" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
+                        <label class="form-check-label acessibilidade" for="flexCheckDefault">
                           Asiática
                         </label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input checkbox" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
+                        <label class="form-check-label acessibilidade" for="flexCheckDefault">
                           Italiana
                         </label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input checkbox" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
+                        <label class="form-check-label acessibilidade" for="flexCheckDefault">
                           Portuguesa
                         </label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input checkbox" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
+                        <label class="form-check-label acessibilidade" for="flexCheckDefault">
                           Sopa
                         </label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input checkbox" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
+                        <label class="form-check-label acessibilidade" for="flexCheckDefault">
                           Sushi
                         </label>
                     </div>
@@ -323,25 +325,25 @@
                     <p>Restrições alimentares</p>
                     <div class="form-check">
                         <input class="form-check-input checkbox" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
+                        <label class="form-check-label acessibilidade" for="flexCheckDefault">
                           Opções vegetarianas
                         </label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input checkbox" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
+                        <label class="form-check-label acessibilidade" for="flexCheckDefault">
                           Opções veganas
                         </label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input checkbox" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
+                        <label class="form-check-label acessibilidade" for="flexCheckDefault">
                           Halal
                         </label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input checkbox" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
+                        <label class="form-check-label acessibilidade" for="flexCheckDefault">
                           Kosher
                         </label>
                     </div>
@@ -353,25 +355,25 @@
                     <p>Bom para</p>
                     <div class="form-check">
                         <input class="form-check-input checkbox" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
+                        <label class="form-check-label acessibilidade" for="flexCheckDefault">
                           Famílias com crianças
                         </label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input checkbox" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
+                        <label class="form-check-label acessibilidade" for="flexCheckDefault">
                           Crianças
                         </label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input checkbox" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
+                        <label class="form-check-label acessibilidade" for="flexCheckDefault">
                           Grupos grandes
                         </label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input checkbox" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
+                        <label class="form-check-label acessibilidade" for="flexCheckDefault">
                           Ocasiões especiais
                         </label>
                     </div>
@@ -383,25 +385,25 @@
                     <p>Bairros</p>
                     <div class="form-check">
                         <input class="form-check-input checkbox" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
+                        <label class="form-check-label acessibilidade" for="flexCheckDefault">
                           Flórida Center
                         </label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input checkbox" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
+                        <label class="form-check-label acessibilidade" for="flexCheckDefault">
                           Doctor Philips
                         </label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input checkbox" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
+                        <label class="form-check-label acessibilidade" for="flexCheckDefault">
                           Lake Buena Vista
                         </label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input checkbox" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
+                        <label class="form-check-label acessibilidade" for="flexCheckDefault">
                           Metro West
                         </label>
                     </div>
@@ -413,7 +415,7 @@
                     <p>Aeroportos</p>
                     <div class="form-check">
                         <input class="form-check-input checkbox" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
+                        <label class="form-check-label acessibilidade" for="flexCheckDefault">
                           Orlando Inti Airport
                         </label>
                     </div>
@@ -424,7 +426,7 @@
                     <p>Parques temáticos</p>
                     <div class="form-check">
                         <input class="form-check-input checkbox" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
+                        <label class="form-check-label acessibilidade" for="flexCheckDefault">
                           Walt Disney World
                         </label>
                     </div>
@@ -580,7 +582,7 @@
                                     <h6>Pontuação dos viajantes</h6>
                                     <div class="form-check">
                                         <input class="form-check-input checkbox" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
+                                        <label class="form-check-label acessibilidade" for="flexCheckDefault">
                                             Excelente
                                         </label>
                                     </div>
@@ -590,7 +592,7 @@
 
                                     <div class="form-check">
                                         <input class="form-check-input checkbox" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
+                                        <label class="form-check-label acessibilidade" for="flexCheckDefault">
                                           Muito bom
                                         </label>
                                     </div>
@@ -600,7 +602,7 @@
 
                                     <div class="form-check">
                                         <input class="form-check-input checkbox" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
+                                        <label class="form-check-label acessibilidade" for="flexCheckDefault">
                                           Razoável
                                         </label>
                                     </div>
@@ -610,7 +612,7 @@
 
                                     <div class="form-check">
                                         <input class="form-check-input checkbox" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
+                                        <label class="form-check-label acessibilidade" for="flexCheckDefault">
                                           Ruim
                                         </label>
                                     </div>
@@ -620,7 +622,7 @@
 
                                     <div class="form-check">
                                         <input class="form-check-input checkbox" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
+                                        <label class="form-check-label acessibilidade" for="flexCheckDefault">
                                           Horrível
                                         </label>
                                     </div>
@@ -633,31 +635,31 @@
                                   <h6>Tipo de viajante</h6>
                                     <div class="form-check">
                                         <input class="form-check-input checkbox" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
+                                        <label class="form-check-label acessibilidade" for="flexCheckDefault">
                                           Familias
                                         </label>
                                     </div>
                                     <div class="form-check">
                                         <input class="form-check-input checkbox" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
+                                        <label class="form-check-label acessibilidade" for="flexCheckDefault">
                                           Romântico
                                         </label>
                                     </div>
                                     <div class="form-check">
                                         <input class="form-check-input checkbox" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
+                                        <label class="form-check-label acessibilidade" for="flexCheckDefault">
                                           A sós
                                         </label>
                                     </div>
                                     <div class="form-check">
                                         <input class="form-check-input checkbox" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
+                                        <label class="form-check-label acessibilidade" for="flexCheckDefault">
                                           Negócios
                                         </label>
                                     </div>
                                     <div class="form-check">
                                         <input class="form-check-input checkbox" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
+                                        <label class="form-check-label acessibilidade" for="flexCheckDefault">
                                           Amigos
                                         </label>
                                     </div>
@@ -667,25 +669,25 @@
                                     <h6>Época do ano</h6>
                                     <div class="form-check">
                                         <input class="form-check-input checkbox" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
+                                        <label class="form-check-label acessibilidade" for="flexCheckDefault">
                                           Mar-Mai
                                         </label>
                                     </div>
                                     <div class="form-check">
                                         <input class="form-check-input checkbox" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
+                                        <label class="form-check-label acessibilidade" for="flexCheckDefault">
                                           Jun-Ago
                                         </label>
                                     </div>
                                     <div class="form-check">
                                         <input class="form-check-input checkbox" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
+                                        <label class="form-check-label acessibilidade" for="flexCheckDefault">
                                           Set-Nov
                                         </label>
                                     </div>
                                     <div class="form-check">
                                         <input class="form-check-input checkbox" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
+                                        <label class="form-check-label acessibilidade" for="flexCheckDefault">
                                           Dez-Fev
                                         </label>
                                     </div>
