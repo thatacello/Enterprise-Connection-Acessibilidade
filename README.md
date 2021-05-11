@@ -4,8 +4,6 @@
 
 2 - Diminuir a fonte
 
-3 - Aumentar o contraste
+3 - Alt com descrição das imagens
 
-4 - Ativar o leitor de tela
-
-5 - Ativar o tradutor de libras
+4 - Botões para aumentar o contraste, ativar leitor de tela e tradutor de libras
